@@ -1,10 +1,11 @@
-title: Jekyll Serial Programmer
+title: Amani's Homepage
+description: Home for my projects, bookmark to keep an eye on projects.
 markdown: kramdown
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Amani White
+  email: amani_g_addison@hotmail.com
 
 plugins:
   - jemoji
