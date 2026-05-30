@@ -4,8 +4,6 @@
 
 [Live Demo](https://sharadcodes.github.io/jekyll-theme-serial-programmer/)
 
-Also check out my new theme (2026) "Ananta" - It's a Minimal, research-oriented Hugo theme [Go to Ananta](https://github.com/sharadcodes/ananta-theme-hugo)
-
 ## Latest Updates 🎉
 
 ### New Features
@@ -52,29 +50,6 @@ Also check out my new theme (2026) "Ananta" - It's a Minimal, research-oriented 
 
 ## Asking for support!
 
-Hello everyone, If you have used this theme and if it has helped you in any way or if you just want to support me for my open source work, you can support me by donating any amount.
+If you find my projects useful or enjoy following my journey into Data Science and Machine Learning, consider supporting my work. Your support helps me dedicate more time to building open-source projects, learning new technologies, and sharing what I learn with the community. Every contribution is greatly appreciated.
 
-You can use the sponsor button at the top or on the right.
-
-### [Github Sponsor Page](https://github.com/sponsors/sharadcodes)
-
-# Screenshots
-
-## PC BLOG PAGE
-
-![Blog page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/pc_blog_dm.png)
-
-![Blog page light mode](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/pc_blog_lm.png)
-
-## PC POST EXAMPLE
-
-![Post page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/pc_post.png)
-
-## PHONE BLOG PAGE
-
-![Blog page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/mobile_blog.png)
-
-## PHONE POST EXAMPLE
-
-![Post page](https://raw.githubusercontent.com/sharadcodes/jekyll-theme-serial-programmer/main/screenshots/mobile_post.png)
-
+### [Github Sponsor Page](https://github.com/sponsors/amaniwhite/)
