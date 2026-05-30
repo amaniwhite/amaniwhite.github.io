@@ -1,32 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <main>
-      {% include header.html %} {% include bio.html %}
-      <section class="articles">
-        {% for post in site.posts %}
-        <article class="article">
-          <h2 class="article-title">
-            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
-          </h2>
-          <small class="date">{{post.date | date_to_string}}</small>
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
-            >
-            {% endfor %}
-          </div>
-        </article>
-        {%endfor%}
-      </section>
-      {% include footer.html %}
-    </main>
-    {% include category-modal.html%}
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
@@ -52,25 +23,22 @@
           {% endunless %}
         {% endfor %}
         
-        <!-- Subtle divider line between repos and posts -->
+        <!-- Subtle divider line -->
         <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
 
-        <!-- 2. Original Blog/Articles Section -->
-        <h2>Articles & Project Deep Dives</h2>
+        <!-- 2. Clean Link to Hashnode -->
+        <h2>Articles & Technical Writing</h2>
         <br>
-        {% for post in site.posts %}
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+            <a href="https://hashnode.com/@amaniwhite" target="_blank">
+              Read my latest articles on Hashnode ↗
+            </a>
           </h2>
-          <small class="date">{{post.date | date_to_string}}</small>
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category">{{c}}</a>
-            {% endfor %}
-          </div>
+          <p style="margin: 5px 0; color: #666;">
+            I regularly write about software development, technical challenges, and my coding journey over on Hashnode.
+          </p>
         </article>
-        {% endfor %}
       </section>
 
       {% include footer.html %}
