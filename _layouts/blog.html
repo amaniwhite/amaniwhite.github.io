@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
   <body>
@@ -24,5 +24,57 @@
       {% include footer.html %}
     </main>
     {% include category-modal.html%}
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <main>
+      {% include header.html %} 
+      {% include bio.html %}
+      
+      <section class="articles">
+        <!-- 1. Live GitHub Repositories Section -->
+        <h2>My GitHub Repositories</h2>
+        <br>
+        {% assign sorted_repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
+        {% for repo in sorted_repos %}
+          {% unless repo.fork %}
+          <article class="article" style="margin-bottom: 20px;">
+            <h2 class="article-title">
+              <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
+            </h2>
+            <p style="margin: 5px 0; color: #666;">{{ repo.description }}</p>
+            <small class="date">⭐ {{ repo.stargazers_count }} | 🍴 {{ repo.forks_count }}</small>
+          </article>
+          {% endunless %}
+        {% endfor %}
+        
+        <!-- Subtle divider line between repos and posts -->
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+        <!-- 2. Original Blog/Articles Section -->
+        <h2>Articles & Project Deep Dives</h2>
+        <br>
+        {% for post in site.posts %}
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+          </h2>
+          <small class="date">{{post.date | date_to_string}}</small>
+          <div class="categories">
+            {% for c in post.categories %}
+            <a href="#!" data-base-url="{{site.baseurl}}" class="category">{{c}}</a>
+            {% endfor %}
+          </div>
+        </article>
+        {% endfor %}
+      </section>
+
+      {% include footer.html %}
+    </main>
+    {% include category-modal.html %}
   </body>
 </html>
